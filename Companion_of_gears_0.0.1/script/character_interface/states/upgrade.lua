@@ -35,6 +35,10 @@ function Upgrade:succeed()
 end
 
 function Upgrade:upgrade_target()
+  local type_inout = nil
+  if self.target.type == "underground-belt" then
+    type_inout = self.target.belt_to_ground_type
+  end
   local created = self.character.entity.surface.create_entity
   {
     name = self.target.get_upgrade_target().name,
@@ -43,7 +47,8 @@ function Upgrade:upgrade_target()
     direction = self.target.get_upgrade_direction(),
     player = self.character.entity.player,
     fast_replace = true,
-    raise_built = true
+    raise_built = true,
+    type = type_inout
   }
   if created then
     self.character:remove_item(self.item.name, self.item.count)

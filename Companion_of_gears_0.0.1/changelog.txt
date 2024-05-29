@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2024-05-13
+  Changes:
+    - Fix: When upgrading or downgrading underground_belt, replacing the output_side was failing.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.0
+Date: 2024-05-12
+  Changes:
+    - Fix: Eliminating infinite recursion.
+    - Fix: In everything, be brave and take the next step. The cause is a reach failure.
+    - Fix: Picking up materials, inventory space full, game crashing.
+    - Fix: If the excavated stone cannot be carried, permanent excavation is performerd.
+    - Fix: Obstacles had failed to be removed when laying curved tracks.
+    - Privilege: Move all announsments to Alt mode.
+
