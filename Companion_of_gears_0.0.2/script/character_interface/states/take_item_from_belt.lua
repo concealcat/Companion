@@ -45,6 +45,7 @@ function Take_item_from_belt:update()
   if self.last_count then
     local diff = (item_count - self.last_count)
     if diff == 0 then
+      self.last_count = 0
       self:succeed()
       self.character:clear_state()
       self.character:remark({"abort-command"})
