@@ -1,0 +1,11 @@
+{
+  "name": "Companion_of_gears",
+  "version": "0.0.4",
+  "title": "Companion of gears",
+  "author": "concealcat",
+  "contact": "",
+  "homepage": "",
+  "description": "Serenity, starry skies, and dance with me.\n\nClick on the location you want to move to on the map screen to move there if possible. If there is something at the destination, it will do something accordingly.\n\nOriginal by Eternally Kruise Kontrol (Klonan)",
+  "dependencies": ["base >= 1.1.0"],
+  "factorio_version": "1.1"
+}
