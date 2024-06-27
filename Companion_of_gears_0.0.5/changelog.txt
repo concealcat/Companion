@@ -1,0 +1,33 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 2024-06-23
+  Features:
+    - The return of the ability to indicate the next action.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2024-05-21
+  Bugfixes:
+    - It was using version number 0.0.0.
+    - There was no explanation of the benefits of MOD.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2024-05-21
+  Bugfixes:
+    - Mismanagement of total number of items in player inventory.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2024-05-13
+  Bugfixes:
+    - When upgrading or downgrading 'underground_belt', replacing the 'output_side' was failing.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2024-05-12
+  Features:
+    - Privilege Move all announcements to Alt mode.
+  Bugfixes:
+    - Eliminating infinite recursion.
+    - In everything, be brave and take the next step. The cause is a reach failure.
+    - Picking up materials, inventory space full, game crashing.
+    - If the excavated stone cannot be carried, permanent excavation is performed.
+    - Obstacles had failed to be removed when laying curved tracks.
+

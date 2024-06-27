@@ -17,7 +17,7 @@ local enqueue_input =
 {
   name = "klient-enqueue-command",
   type = "custom-input",
-  key_sequence = "CONTROL + ALT + SHIFT + mouse-button-2",
+  key_sequence = "",
   consuming = "game-only"
 }
 
@@ -71,7 +71,7 @@ data:extend
 {
   --input,
   alt_input,
-  --enqueue_input
+  enqueue_input,
   cancel_w,
   cancel_a,
   cancel_s,
