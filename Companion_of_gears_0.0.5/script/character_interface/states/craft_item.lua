@@ -113,7 +113,7 @@ function Craft_item:update()
   end
 
   if self.character.entity.crafting_queue_size > 0 then
-    if game.tick % 2 == 0 then
+    if game.tick % 2 == 0 and self.character.entity.player.game_view_settings.show_entity_info then
       self.character.entity.direction = (self.character.entity.direction + 1) % (2 * defines.direction.south)
     end
     -- We are already crafting, lets just wait and see what happens.
