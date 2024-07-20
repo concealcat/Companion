@@ -71,7 +71,7 @@ data:extend
 {
   --input,
   alt_input,
-  enqueue_input,
+  --enqueue_input,
   cancel_w,
   cancel_a,
   cancel_s,

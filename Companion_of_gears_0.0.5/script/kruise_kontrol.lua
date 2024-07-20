@@ -103,7 +103,7 @@ local lib = {}
 lib.events =
 {
   ["klient-alt-move-to"] = on_player_action_command,
-  ["klient-enqueue-command"] = on_player_enqueue_action_command,
+  --["klient-enqueue-command"] = on_player_enqueue_action_command,
   --["klient-cancel-w"] = on_player_cancel_command,
   --["klient-cancel-a"] = on_player_cancel_command,
   --["klient-cancel-s"] = on_player_cancel_command,

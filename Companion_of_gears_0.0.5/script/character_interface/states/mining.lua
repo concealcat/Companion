@@ -92,15 +92,18 @@ function Mining:update()
   self.character.entity.mining_state = {mining = true, position = self.selection_position}
 
   if self.progress > self.character:get_mining_progress() then
+--[[
     local inventory = self.character.entity.get_main_inventory()
-    if inventory.get_insertable_count(self.target.name) == 0 then
+    local item = self.character.entity.can_insert(self.target.name)
+    game.print(inventory.get_insertable_count(self.target.name))
+    if inventory and inventory.get_insertable_count(self.target.name) == 0 then
       self:finish()
-      self.character:clear_state()
-      self.character:remark({"abort-command"})
-      game.print({"inventory-restriction.player-inventory-full", self.character:get_localised_item_name(self.target.name), {"inventory-full-message.main"}})
+      --self.character:remark({"abort-command"})
+      --self.character:clear_state()
+      --game.print({"inventory-restriction.player-inventory-full", self.character:get_localised_item_name(self.target.name), {"inventory-full-message.main"}})
       return
     end
-
+]]
     --Our progress is higher than the current, which means we must have mined a piece
     self.amount = self.amount - 1
     if self.amount == 0 then
